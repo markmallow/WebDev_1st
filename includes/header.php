@@ -11,8 +11,8 @@
             <div class="sidebar">
                 <img src="../images/logo.png" alt="logo">
                 <ul>
-                    <li><a href="dashboard.php">DASHBOARD</a></li>
-                    <li><a href="users.php">USERS</a></li>
+                    <li><a href="../startup/index.php">DASHBOARD</a></li>
+                    <li><a href="../users/users.php">USERS</a></li>
                 </ul>
             </div>   
         </header>
