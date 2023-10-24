@@ -29,8 +29,8 @@
    color: #45a29e;
 }
 .container form #sub{
-    height: 30px;
-    width: 247px;
+    width: 253px;
+    padding: 5px;
 }
 .container hr{
     margin: 20px 0px;
@@ -42,4 +42,14 @@
     border: 1px solid black;
     border-collapse: collapse;
     padding: 10px 40px;
+}
+.container table tr td #actButtons{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.container table tr td #actButtons form, input[type=submit]{
+    margin: 0;
+    margin-right: 10px;
+    padding: 5px;
 }

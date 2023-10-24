@@ -56,20 +56,22 @@
                 <td><?php echo $result["lastname"] ?></td>
                 <td><?php echo $result["email"] ?></td>
                 <td><?php echo $result["contact"] ?></td>
-                <td>
-                    <form action="update.php" method="post">
-                        <input type="submit" name="btnEdit" value="EDIT">
-                        <input type="hidden" name="id" value="<?php echo $result ["ID"]?>">
-                        <input type="hidden" name="Firstname" value="<?php echo $result ["firstname"]?>">
-                        <input type="hidden" name="Lastname" value="<?php echo $result ["lastname"]?>">
-                        <input type="hidden" name="Email" value="<?php echo $result ["email"]?>">
-                        <input type="hidden" name="Contact" value="<?php echo $result ["contact"]?>">
-                        <input type="hidden" name="Password" value="<?php echo $result ["password"]?>">
-                    </form>
-                    <form action="delete.php" method="post">
-                        <input type="submit" name="btnDelete" value="DELETE">
-                        <input type="hidden" name="id" value="<?php echo $result ["ID"]?>">
-                    </form>
+                <td id = "actButtons">
+                    <div id = "actButtons">
+                        <form id="frmEdit" action="update.php" method="post">
+                            <input type="submit" name="btnEdit" value="EDIT">
+                            <input type="hidden" name="id" value="<?php echo $result ["ID"]?>">
+                            <input type="hidden" name="Firstname" value="<?php echo $result ["firstname"]?>">
+                            <input type="hidden" name="Lastname" value="<?php echo $result ["lastname"]?>">
+                            <input type="hidden" name="Email" value="<?php echo $result ["email"]?>">
+                            <input type="hidden" name="Contact" value="<?php echo $result ["contact"]?>">
+                            <input type="hidden" name="Password" value="<?php echo $result ["password"]?>">
+                        </form>
+                        <form id="frmDelete" action="delete.php" method="post">
+                            <input type="submit" name="btnDelete" value="DELETE">
+                            <input type="hidden" name="id" value="<?php echo $result ["ID"]?>">
+                        </form>
+                    </div>
                 </td>
             </tr>
         <?php } ?>
