@@ -1,0 +1,45 @@
+.container .header{
+    display: flex;
+    align-items: center;
+}
+.container .header img{
+    height: 100px;
+    width: 100px;
+    margin-right: 20px;
+}
+.container form{
+    margin: 20px 0px;
+    display: table;
+    padding: 10px;
+}
+.container form p{ 
+    display: table-row;  
+}
+.container form label, input{
+    margin-bottom: 20px;
+    font-size: 20px;
+    display: table-cell;
+}
+.container form input{
+    border-radius: 5px;
+    border: 1px;
+}
+.container form input[type=submit] {
+   background: #0b0c10;
+   color: #45a29e;
+}
+.container form #sub{
+    height: 30px;
+    width: 247px;
+}
+.container hr{
+    margin: 20px 0px;
+}
+.container table{
+    width: 100%;
+}
+.container table, tr, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px 40px;
+}
